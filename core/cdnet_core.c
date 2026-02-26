@@ -44,7 +44,7 @@ static int cdn_sock_insert(cdn_sock_t *sock)
 }
 
 
-void cdn_routine(cdn_ns_t *ns)
+void cdn_poll(cdn_ns_t *ns)
 {
     // rx
     for (int i = 0; i < CDN_INTF_MAX; i++) {
