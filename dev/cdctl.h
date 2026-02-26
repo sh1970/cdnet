@@ -78,7 +78,7 @@ static inline void cdctl_flush(cdctl_dev_t *dev)
     cdctl_reg_w(dev, CDREG_RX_CTRL, CDBIT_RX_RST_ALL);
 }
 
-void cdctl_routine(cdctl_dev_t *dev);
+void cdctl_poll(cdctl_dev_t *dev);
 
 void cdctl_tx_cb(cdctl_dev_t *dev, cd_frame_t *frame);
 

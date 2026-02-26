@@ -52,7 +52,7 @@ int cdn_sock_bind(cdn_sock_t *sock);
 int cdn_sock_sendto(cdn_sock_t *sock, cdn_pkt_t *pkt);
 cdn_pkt_t *cdn_sock_recvfrom(cdn_sock_t *sock);
 
-void cdn_routine(cdn_ns_t *ns);
+void cdn_poll(cdn_ns_t *ns);
 void cdn_init_ns(cdn_ns_t *ns, list_head_t *free_pkt, list_head_t *free_frm);
 int cdn_add_intf(cdn_ns_t *ns, cd_dev_t *dev, uint8_t net, uint8_t mac);
 

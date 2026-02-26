@@ -167,7 +167,7 @@ int cdctl_dev_init(cdctl_dev_t *dev, list_head_t *free_head, cdctl_cfg_t *init, 
 }
 
 
-void cdctl_routine(cdctl_dev_t *dev)
+void cdctl_poll(cdctl_dev_t *dev)
 {
     uint8_t flags = cdctl_reg_r(dev, CDREG_INT_FLAG);
 
